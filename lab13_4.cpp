@@ -1,6 +1,10 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+
+template<class swp>
+void mySwap(swp &,swp &);
+
 
 int main(){
 	int x, y;
@@ -28,5 +32,15 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+
+template<class swp>
+void mySwap(swp &x,swp &y){
+	swp G ;
+	G=x;
+	x=y;
+	y=G;
+
 }
 
